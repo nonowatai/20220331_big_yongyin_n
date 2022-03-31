@@ -113,14 +113,14 @@ html {
                             position: absolute;
                             left: -90px;
                             top: 90px;
-                            animation: leftslide 1s ease;
+                            animation: leftslide 0.8s ease;
 
                             @keyframes leftslide {
                                from {
                                    left: -300px;
                                }
                                to {
-                                   left: 10px;
+                                    left: -90px;
                                }
                             }
                         }
@@ -226,15 +226,14 @@ html {
                             position: absolute;
                             right: -135px;
                             top: 140px;
-                            animation: rightslide 0.6s ease;
-                            animation-delay: 0.4s;
+                            animation: rightslide 0.8s ease;
 
                             @keyframes rightslide {
                                 from {
                                     right: -300px;
                                 }
                                 to {
-                                    right: 10px;
+                                    right: -135px;
                                 }
                              }
                         }                       
