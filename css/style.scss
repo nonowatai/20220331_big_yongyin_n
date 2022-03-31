@@ -1,0 +1,270 @@
+@font-face {
+    font-family: "my_font";
+    src:local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+    unicode-range: U+4E00-9FFF, U+2E80-2EFF, U+0020-007F;
+}
+@font-face{
+    font-family: 'my_font';
+    src:url(../font/Bahnschrift.TTF);
+    unicode-range: U+0020-007F;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+main {
+    display: block;
+}
+ol,ul {
+    list-style: none;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    font-family: "my_font";
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+select,input {
+    font-family: "my_font";
+    outline: none;
+}
+html {
+    font-family: "my_font";
+    background: white;
+    box-sizing: border-box;
+    margin: 0px auto;
+    // user-select: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+
+//內容 ///////////////////////////////////////////////////////////
+
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #38561a;  
+
+    body {
+        min-width: 980px; 
+        height: auto; 
+        // overflow: hidden;
+        
+        main {
+            width: 100%;
+            height: 1000px;
+            overflow: hidden;
+            article{
+                width: 1200px; 
+                height: 100%;
+                margin: 0 auto;
+
+                section {
+                width: 50%;
+                height: 100%;
+                float: left; 
+
+                    &.left {
+                        position: relative;
+                        z-index: -998;
+                        
+                        .baseball-man {
+                            width: 797px;
+                            height: 687px;
+                            background: url(../image/baseball-man.png) no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            right: -45px;
+                            top: 160px;
+                            animation: sliden 2s ease;
+                            animation-delay: 0.4s;
+
+                            @keyframes sliden {
+                                15% {
+                                    transform: rotate(10deg);
+                                }
+                                30% {
+                                    transform:  rotate(-5deg);
+                                }
+                                100% {
+                                    transform:  rotate(0deg);
+                                }
+                            }
+                        }
+
+                        .cobe {
+                            width: 572px;
+                            height: 701px;
+                            background: url(../image/cobe.png) no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            top: 160px;
+                            left: 150px;
+
+                            animation: big1 2s ease;
+                            animation-delay: 0.2s;
+
+                            @keyframes big1 {
+                                15% {
+                                    transform: scale(1.1);
+                                }
+                                100% {
+                                    width: 572px;
+                                    height: 701px;
+                                }
+                            }
+                        }
+
+                        .red-man {
+                            width: 337px;
+                            height: 806px;
+                            background: url(../image/red_man.png) no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            top: 90px;
+                            left: 192px;
+
+                            animation: big 1s ease;
+
+                            @keyframes big {
+
+                                15% {
+                                    transform: scale(1.1);
+                                }
+                                100% {
+                                    width: 337px;
+                                    height: 806px;
+                                }
+                            }
+                        }
+                    }
+
+                    &.right {
+                        position: relative;
+
+                        .logo{
+                           width: 511px;
+                           height: 179px;
+                           background: url(../image/logo.png) no-repeat;
+                           background-size: 100%;
+                           margin: 80px 0px 0 23px;
+                        }
+                        .inputBox {
+                            position: absolute;
+                            width: 491px;
+                            height: 289px;
+                            border-radius: 20px; 
+                            margin:21px 30px 5px 38px ;
+                            background: none;
+
+                            .box1 {
+                                width: 100%;
+                                height: 140px;
+                                display: flex;
+                                margin: 3px 0 0 40px;
+                                
+                                .input-box {
+                                    width: 65%;
+
+                                    input {
+                                    width: 263px;
+                                    height: 42px;
+                                    border-radius: 3px;
+                                    margin: 7px 10px 5px 0px;
+                                    background: linear-gradient(to top, #d7d7d7 1%,#ffffff 11%,#aaaaaa 100%);;
+                                    box-shadow: 1px 1px 0px 0px #12091078 inset;
+                                    border-radius: 8px;
+                                    border: 1px solid #fff;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    padding-left: 15px;
+
+                                    &::placeholder {
+                                        color: #4c4c4c;
+                                        padding-left: 75px;
+                                    }
+                                    
+                                    }
+                                }
+
+                                .button-box {
+                                    width: 40%;
+
+                                    button {
+                                        width: 107px;
+                                        height: 115px;
+                                        background: url('../image/btn.png') no-repeat;
+                                        line-height: 115px;
+                                        background-size: 100%;
+                                        font-size: 32px;
+                                        font-weight: bold;
+                                        color: #fff6e1;
+                                        margin-top: 7px;
+                                        &:hover,&:active,&.active {
+                                            background-position-y: calc(100% + 2px);
+                                        }
+                                     }
+                                }
+                
+                               
+                            }
+                            .smalllogo_Box {
+                                width:269px;
+                                height: 107px;
+                                margin: 5px 0px 0 125px;
+                                .smalllogo {
+                                width:269px;
+                                height: 107px;
+                                background: url(../image/小logo.png) no-repeat;
+                                background-size: 100%;
+                                background-position: center;
+                                margin: auto;
+}
+                            } 
+                      }
+                    }
+                }
+              }
+
+            }
+        }
+        //背景
+        .bg {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            min-width: 980px; 
+            min-height: 1000px;   //到980時停止移動//
+            height: 100%;
+            background: url('../image/bg.png') no-repeat top center;
+            z-index: -999;
+        }
+    }
