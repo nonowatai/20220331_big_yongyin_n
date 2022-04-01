@@ -90,13 +90,6 @@ html body main {
   height: 937px;
   overflow: hidden;
 }
-html body main .light {
-  width: 100%;
-  height: 937px;
-  background: url(../image/light.png) no-repeat;
-  background-size: 100%;
-  position: absolute;
-}
 html body main article {
   width: 1200px;
   height: 100%;
