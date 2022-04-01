@@ -149,19 +149,17 @@ html body main article section.between .inputBox {
   margin: 5px 0px 0px -10px;
   background: url(../image/box.png) no-repeat;
 }
-html body main article section.between .inputBox .box1 {
+html body main article section.between .inputBox .mainbox {
   width: 100%;
   height: 140px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 3px 0 0 40px;
 }
-html body main article section.between .inputBox .box1 .input-box {
+html body main article section.between .inputBox .mainbox .input-box {
   width: 58%;
   margin-top: 25px;
+  float: left;
 }
-html body main article section.between .inputBox .box1 .input-box input {
+html body main article section.between .inputBox .mainbox .input-box input {
   width: 240px;
   height: 40px;
   border-radius: 3px;
@@ -171,26 +169,27 @@ html body main article section.between .inputBox .box1 .input-box input {
   font-size: 20px;
   padding-left: 15px;
 }
-html body main article section.between .inputBox .box1 .input-box input::-webkit-input-placeholder {
+html body main article section.between .inputBox .mainbox .input-box input::-webkit-input-placeholder {
   color: #ffffff;
 }
-html body main article section.between .inputBox .box1 .input-box input::-moz-placeholder {
+html body main article section.between .inputBox .mainbox .input-box input::-moz-placeholder {
   color: #ffffff;
 }
-html body main article section.between .inputBox .box1 .input-box input:-ms-input-placeholder {
+html body main article section.between .inputBox .mainbox .input-box input:-ms-input-placeholder {
   color: #ffffff;
 }
-html body main article section.between .inputBox .box1 .input-box input::-ms-input-placeholder {
+html body main article section.between .inputBox .mainbox .input-box input::-ms-input-placeholder {
   color: #ffffff;
 }
-html body main article section.between .inputBox .box1 .input-box input::placeholder {
+html body main article section.between .inputBox .mainbox .input-box input::placeholder {
   color: #ffffff;
 }
-html body main article section.between .inputBox .box1 .button-box {
+html body main article section.between .inputBox .mainbox .button-box {
   width: 30%;
   margin: 16px 0 0 -10px;
+  float: left;
 }
-html body main article section.between .inputBox .box1 .button-box button {
+html body main article section.between .inputBox .mainbox .button-box button {
   width: 154px;
   height: 129px;
   background: url("../image/btn.png") no-repeat;
@@ -203,7 +202,7 @@ html body main article section.between .inputBox .box1 .button-box button {
   margin-top: 7px;
   padding-right: 11px;
 }
-html body main article section.between .inputBox .box1 .button-box button:hover, html body main article section.between .inputBox .box1 .button-box button:active, html body main article section.between .inputBox .box1 .button-box button.active {
+html body main article section.between .inputBox .mainbox .button-box button:hover, html body main article section.between .inputBox .mainbox .button-box button:active, html body main article section.between .inputBox .mainbox .button-box button.active {
   background-position-y: calc(100% + -14px);
 }
 html body main article section.between .inputBox .smalllogo_Box {
@@ -222,6 +221,7 @@ html body main article section.between .inputBox .smalllogo_Box .smalllogo {
 html body main article section.right {
   position: relative;
   z-index: -998;
+  pointer-events: none;
 }
 html body main article section.right .soccer-man {
   width: 351px;
