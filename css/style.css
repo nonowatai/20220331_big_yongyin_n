@@ -205,19 +205,6 @@ html body main article section.between .inputBox .mainbox .button-box button {
 html body main article section.between .inputBox .mainbox .button-box button:hover, html body main article section.between .inputBox .mainbox .button-box button:active, html body main article section.between .inputBox .mainbox .button-box button.active {
   background-position-y: calc(100% + -14px);
 }
-html body main article section.between .inputBox .smalllogo_Box {
-  width: 211px;
-  height: 85px;
-  margin: 23px 0px 0 141px;
-}
-html body main article section.between .inputBox .smalllogo_Box .smalllogo {
-  width: 211px;
-  height: 85px;
-  background: url(../image/小logo.png) no-repeat;
-  background-size: 100%;
-  background-position: center;
-  margin: auto;
-}
 html body main article section.right {
   position: relative;
   z-index: -998;
